@@ -1,7 +1,7 @@
 ## RESOURCES ##
-Morning Lecture (Flask): https://fellowship.hackbrightacademy.com/materials/serft8/lectures/flask/#post-requests
-Afternoon Lecture (Flask & Jinja): https://fellowship.hackbrightacademy.com/materials/serft8/lectures/flask-jinja/
-Afternoon Lab Instructions: https://fellowship.hackbrightacademy.com/materials/serft8/exercises/madlibs/
+9/14 Morning Lecture (Flask): https://fellowship.hackbrightacademy.com/materials/serft8/lectures/flask/#post-requests
+9/14 Afternoon Lecture (Flask & Jinja): https://fellowship.hackbrightacademy.com/materials/serft8/lectures/flask-jinja/
+9/14 Afternoon Lab Instructions: https://fellowship.hackbrightacademy.com/materials/serft8/exercises/madlibs/
 Further Study: https://fellowship.hackbrightacademy.com/materials/serft8/exercises/madlibs/further-study.html
 
 

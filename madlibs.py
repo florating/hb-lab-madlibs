@@ -19,7 +19,7 @@ AWESOMENESS = [
 def start_here():
     """Display homepage."""
 
-    return "Hi! This is the home page."
+    return "<b>Hi!</b> This is the home page."
 
 
 @app.route('/hello')
@@ -31,12 +31,15 @@ def say_hello():
 
 @app.route('/greet')
 def greet_person():
-    """Greet user with compliment."""
+    """Greet user with compliment using user input from /hello."""
 
-    player = request.args.get("person")
+    player = request.args.get("person") # from /hello (from hello.html, specifically)
 
     compliment = choice(AWESOMENESS)
-
+    
+    # could rename to greet_and_compliment.html so connection between /greet webpage and the HTML template is clear
+    # person and compliment are variables that appear in compliment.html
+    # we are assigning values player and compliment from above, respectively, to those two variables
     return render_template("compliment.html",
                            person=player,
                            compliment=compliment)
