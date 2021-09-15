@@ -5,5 +5,22 @@
 </head>
 <body>
     Hi {{ person }}! I think you're {{ compliment }}!
+
+    <!-- Create a form,
+        ask if they'd like to play a game,
+        have a radio button,
+        submit to URL path /game -->
+    
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label -->
+    <br><br><div>
+    <form action="/game">
+      <label for="game">Would you like to play a game?</label>
+      <br><input type = "radio" name = "game" value = "yes">Yes
+      <br><input type = "radio" name = "game" value = "no">No
+      <br><input type="submit" name="Submit">
+    </form>
+    </div>
 </body>
 </html>
+
+
