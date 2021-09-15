@@ -1,0 +1,19 @@
+body {
+    margin: auto;
+    width: 600px;
+    height: auto;
+    border: 3px;
+    border-style: none, none, double, none;
+    background-color: beige;
+    text-align: center
+}
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+div {
+    border: 2px solid;
+    background-color: #cccccc;
+    padding: 2em
+}

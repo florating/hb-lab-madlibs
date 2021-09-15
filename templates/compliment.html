@@ -1,18 +1,10 @@
-<!doctype html>
-<html>
-<head>
-  <title>A Compliment</title>
-</head>
-<body>
-    Hi {{ person }}! I think you're {{ compliment }}!
+{% extends 'base.html' %}
 
-    <!-- Create a form,
-        ask if they'd like to play a game,
-        have a radio button,
-        submit to URL path /game -->
-    
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label -->
-    <br><br><div>
+{% block title %}A Compliment{% endblock %}
+
+{% block content %}
+Hi {{ person }}! I think you're {{ compliment }}!
+<br><br><div>
     <form action="/game">
       <label for="game">Would you like to play a game?</label>
       <br><input type = "radio" name = "game" value = "yes">Yes
@@ -20,7 +12,6 @@
       <br><input type="submit" name="Submit">
     </form>
     </div>
-</body>
-</html>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label -->
 
-
+{% endblock %}

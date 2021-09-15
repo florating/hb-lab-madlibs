@@ -5,13 +5,13 @@
 {% block content %}
 <h1>Let's play a game!</h1>
 
-
-
-<form action="/madlib">
-Please select your options:
-<br> - noun:
-<br> - adjective:
-<br> - verb: <input type="text" name="verb">
-</form>
+<div><form action="/madlib">
+<b>Please select your options:</b>
+<br> - person: <input type="text" name="person">
+<br> - noun: <input type="text" name="noun">
+<br> - adjective: <input type="text" name="adjective">
+<br> - color: <input type="text" name="color">
+<br><input type="submit" name="Submit">
+</form></div>
 
 {% endblock %}

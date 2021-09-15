@@ -1,8 +1,27 @@
-Modify the template compliment.html to ask the person if they’d like to play a game (hint: try radio buttons). Have this form submit to the URL path /game. This form won’t work until we make the endpoint on flask, so now…
+## RESOURCES ##
+Morning Lecture (Flask): https://fellowship.hackbrightacademy.com/materials/serft8/lectures/flask/#post-requests
+Afternoon Lecture (Flask & Jinja): https://fellowship.hackbrightacademy.com/materials/serft8/lectures/flask-jinja/
+Afternoon Lab Instructions: https://fellowship.hackbrightacademy.com/materials/serft8/exercises/madlibs/
+Further Study: https://fellowship.hackbrightacademy.com/materials/serft8/exercises/madlibs/further-study.html
 
-Make a function called show_madlib_form() and have the URL /game route to it. In this function, get the user’s response to the yes-or-no question on the “would you like to play a game?” form.
+
+## YOUR TASK ##
+(copied from lab instructions)
+
+Now that we’ve got a solid foundation for our first webapp, let’s have some fun.
+
+1.  Modify the template compliment.html to ask the person if they’d like to play a game (hint: try radio buttons). Have this form submit to the URL path /game. This form won’t work until we make the endpoint on flask, so now…
+
+2.  Make a function called show_madlib_form() and have the URL /game route to it. In this function, get the user’s response to the yes-or-no question on the “would you like to play a game?” form.
+
+    If they said no, return a rendered template, goodbye.html, that tells them goodbye and that they’ll be missed (or something else appropriate).
+
+    If they said yes, render a different template, game.html. The template game.html should have a simple form that asks for a person, a color, a noun, and an adjective. How you choose to implement those inputs is up to you, but you should feel free to mix and match. (Hint: it might be fun to try one as a drop-down menu of choices). This new form should have the action of /madlib.
+
+3.  Write a new function, show_madlib(), which is routed to by the URL path /madlib. It should render the template madlib.html, which should fill the person, color, noun, and adjective provided by the user into a MadLibs-style story.
 
 
+## EXAMPLE ##
 <form>
   Choose a shipping method:
 
